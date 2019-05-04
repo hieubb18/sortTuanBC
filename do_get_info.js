@@ -166,13 +166,6 @@ function xemBaoCao(masv) {
 
 }
 
-// $("#baocao p").sort(function(a, b) {
-//     return parseInt(a.id) - parseInt(b.id);
-//   }).each(function() {
-//     var elem = $(this);
-//     elem.remove();
-//     $(elem).appendTo("#baocao");
-//   });
 function addClassnameTUAN() {
     // body...
 
