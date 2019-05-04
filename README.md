@@ -1,3 +1,5 @@
+UPDATE TUẦN TIẾNG VIỆT
+
 File <strong>do_get_info.js</strong> Chỉnh sữa sắp xếp theo tuần báo cáo <br>
 File <strong>style.css</strong> - Thêm Chỉnh sữa border cơ bản phần báo cáo <strong>css/style.css</strong>
 
