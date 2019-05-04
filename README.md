@@ -1,4 +1,4 @@
-UPDATE TUẦN TIẾNG VIỆT
+
 
 <ul><h2>File<strong>do_get_info.js</strong> </h2>
     <li>Chỉnh sữa sắp xếp theo tuần báo cáo</li>
@@ -10,6 +10,5 @@ UPDATE TUẦN TIẾNG VIỆT
     <li>Thêm Chỉnh sữa giao diện mục thông tin sinh viên </li>
 </ul>
 
-
-
+<a href="https://loading.io/spinners/balls/lg.circle-slack-loading-icon.gif" ></a>
 <a href="https://ibb.co/dgGDKzD"><img src="https://i.ibb.co/YZphjqh/1.png" alt="1" border="0"></a>
