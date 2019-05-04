@@ -134,9 +134,12 @@ function xemBaoCao(masv) {
 
                                 if (name.match(/tuan.*/)) {
                                     //buid table 2
+
                                     var val = [].concat(row[name]).join(' / ');
-                                    strTextBaoCao += "<li id="+name+">" + "<strong>" + name + "</strong>";
-                                    strTextBaoCao += "<p>" + val + "</p>" + "</li>";
+                                    strTextBaoCao += "<li id="+name+">" + "<strong id="+name+">" + name + "</strong>";
+                                    strTextBaoCao += "<p>" + val + "</p>" + "</li>"; debugger;
+
+                                   
                                 }
                             }
                         });
@@ -172,18 +175,16 @@ function xemBaoCao(masv) {
 //   });
 function addClassnameTUAN() {
     // body...
-    document.getElementById("tuan-mot").setAttribute("id", "1");
-    document.getElementById("tuan-hai").setAttribute("id", "2");
-    document.getElementById("tuan-ba").setAttribute("id", "3");
-    document.getElementById("tuan-bon").setAttribute("id", "4");
-    document.getElementById("tuan-nam").setAttribute("id", "5");
-    document.getElementById("tuan-sau").setAttribute("id", "6");
-    document.getElementById("tuan-bay").setAttribute("id", "7");
-    document.getElementById("tuan-tam").setAttribute("id", "8");
-    document.getElementById("tuan-chin").setAttribute("id", "9");
-    document.getElementById("tuan-muoi").setAttribute("id", "10");
-    document.getElementById("tuan-muoi-mot").setAttribute("id", "11");
-    document.getElementById("tuan-muoi-hai").setAttribute("id", "12");
+
+    var arrayChangeID = ['tuan-mot','tuan-hai','tuan-ba','tuan-bon','tuan-nam','tuan-sau','tuan-bay','tuan-tam','tuan-chin','tuan-muoi','tuan-muoi-mot','tuan-muoi-hai'];
+    for (var i = 0; i<arrayChangeID.length ; i++)
+    {
+        document.getElementById(arrayChangeID[i]).setAttribute("id",i);
+
+    }
+
+    //tag id chuyen ve kieu so
+    setTenTuan();
     $("#baocao li").sort(function (a, b) {
         return parseInt(a.id) - parseInt(b.id);
     }).each(function () {
@@ -191,4 +192,13 @@ function addClassnameTUAN() {
         elem.remove();
         $(elem).appendTo("#baocao");
     });
+}
+function setTenTuan(){
+    //Set ten tuan
+    var weeks = new Array('Tuần 1:','Tuần 2:', 'Tuần 3:', 'Tuần 4:', 'Tuần 5:', 'Tuần 6:', 'Tuần 7:', 'Tuần 8:', 'Tuần 9:', 'Tuần 10:', 'Tuần 11:', 'Tuần 12:');
+    var arrayStrongTagID = ['tuan-mot','tuan-hai','tuan-ba','tuan-bon','tuan-nam','tuan-sau','tuan-bay','tuan-tam','tuan-chin','tuan-muoi','tuan-muoi-mot','tuan-muoi-hai'];
+    for( var i  =  0 ; i< weeks.length ; i++)
+    {
+        document.getElementById(arrayStrongTagID[i]).innerHTML = weeks[i];
+    }
 }
