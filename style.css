@@ -244,3 +244,26 @@ ul#baocao {
   border: 1px solid lightgrey;
   padding: 14px 16px;
 }
+
+
+/* style header thông tin sinh viên */
+.ten_mssv_sv {
+  border: 1px dotted;
+  margin: 10px auto;
+  padding: 14px 16px;
+}
+label.lb_ttsv {
+  padding-right: 16px;
+}
+.ten_mssv_sv span:first-of-type::before {
+  content: 'Họ và tên: ';
+}
+span.ttsv b {
+  /* padding-left: 0; */
+  color: darkred;
+}
+
+
+.ten_mssv_sv span:nth-of-type(2)::before {
+  content: 'Mã số sinh viên: ';
+}
